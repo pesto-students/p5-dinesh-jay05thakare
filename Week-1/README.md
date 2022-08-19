@@ -23,7 +23,7 @@ server and you are communicating with that server and get data present on the in
     5. JS interpreter (chrome-V8, firefox-spidermonkey)
     6. Data storage (cookies and local storage)
 
-    [![Componentsbrowser-Components.png](https://i.postimg.cc/4xTz8mHL/Componentsbrowser-Components.png)](https://postimg.cc/0bcMj5fD)
+    [![Componentsbrowser-Components.png](https://i.postimg.cc/yxhG83P8/Componentsbrowser-Components.png)](https://postimg.cc/MfT5sTNC)
 
 </details>
 
@@ -48,6 +48,9 @@ as a storage centers. Now when ever you request youtube.com, server returns
 some UI files (HTML, CSS, JS) and some client side processing files (JS) to your browser. Because 
 browser in the end is just an interpreter which gets some source code and it 
 can display it on the screen.
+
+[![Componentsbrowser-Components.png](https://i.postimg.cc/yxhG83P8/Componentsbrowser-Components.png)](https://postimg.cc/MfT5sTNC)
+
 But now the question is how does the servers know what data or web page are we
 requesting. So every webpage has its address, more commonly known as IP address. 
 This IP address points to a location in the server. So to get this address, our 
