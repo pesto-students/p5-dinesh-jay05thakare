@@ -8,12 +8,14 @@
 
 <details>
     <summary>High Level Components of a browser</summary>
+    ~~~
         1. User Interface
         2. Rendering engine (HTML CSS -> Webpage | renders img, video, html, css, svg, etc | chrome & opera use RE blink, firefox use gecko | gets data from the network)
         3. Browser engine (Server <-> Rendering engine)
         4. Network
         5. JS interpreter (chrome-V8, firefox-spidermonkey)
         6. Data storage (cookies and local storage)
+    ~~~
 </details>
 
 Internet is Global system of interconnected computer networks that uses the 
