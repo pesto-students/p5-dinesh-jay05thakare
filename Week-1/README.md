@@ -10,9 +10,9 @@
     <summary>High Level Components of a browser</summary>
 
     A list
-    - User Interface
-    - Rendering engine (HTML CSS -> Webpage | renders img, video, html, css, svg, etc | chrome & opera use RE blink, firefox use gecko | gets data from the network)
-    - Browser engine (Server <-> Rendering engine)
+    1. User Interface
+    2. Rendering engine (HTML CSS -> Webpage | renders img, video, html, css, svg, etc | chrome & opera use RE blink, firefox use gecko | gets data from the network)
+    3. Browser engine (Server <-> Rendering engine)
 
 </details>
 
