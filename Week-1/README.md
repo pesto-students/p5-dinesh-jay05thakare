@@ -23,7 +23,7 @@ server and you are communicating with that server and get data present on the in
     5. JS interpreter (chrome-V8, firefox-spidermonkey)
     6. Data storage (cookies and local storage)
 
-[![Componentsbrowser-Components.png](https://i.postimg.cc/yxhG83P8/Componentsbrowser-Components.png)](https://postimg.cc/MfT5sTNC)
+[![Componentsbrowser-comp.png](https://i.postimg.cc/Y9mpCRZf/Componentsbrowser-comp.png)](https://postimg.cc/TLf8kVRp)
 
 </details>
 
@@ -49,7 +49,6 @@ some UI files (HTML, CSS, JS) and some client side processing files (JS) to your
 browser in the end is just an interpreter which gets some source code and it 
 can display it on the screen.
 
-[![Componentsbrowser-Components.png](https://i.postimg.cc/yxhG83P8/Componentsbrowser-Components.png)](https://postimg.cc/MfT5sTNC)
 
 But now the question is how does the servers know what data or web page are we
 requesting. So every webpage has its address, more commonly known as IP address. 
