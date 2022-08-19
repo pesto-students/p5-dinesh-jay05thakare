@@ -7,12 +7,12 @@
 ### Explanation
 
 <details>
-    <summary>some summary</summary>
+    <summary>High Level Components of a browser</summary>
 
     A list
-    - Another list item
-    - <details><summary>some summary</summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc est tellus, convallis eget vulputate ut, eleifend vel mauris. Maecenas consequat aliquam tortor quis bibendum</details>
-    - Another list item
+    - User Interface
+    - Rendering engine (HTML CSS -> Webpage | renders img, video, html, css, svg, etc | chrome & opera use RE blink, firefox use gecko | gets data from the network)
+    - Browser engine (Server <-> Rendering engine)
 
 </details>
 
