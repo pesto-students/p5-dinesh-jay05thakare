@@ -17,16 +17,18 @@ server and you are communicating with that server and get data present on the in
     <summary>High level components of a browser</summary>
 
     1. User Interface
-    hii
-    2. Rendering engine (HTML CSS -> Webpage | renders img, video, html, css, svg, etc | chrome & opera use RE blink, firefox use gecko | gets data from the network)
+    2. Rendering engine
     3. Browser engine (Server <-> Rendering engine)
     4. Network
     5. JS interpreter (chrome-V8, firefox-spidermonkey)
     6. Data storage (cookies and local storage)
 
+    [![Componentsbrowser-Components.png](https://i.postimg.cc/4xTz8mHL/Componentsbrowser-Components.png)](https://postimg.cc/0bcMj5fD)
+
 </details>
 
 Rendering:
+(HTML CSS -> Webpage | renders img, video, html, css, svg, etc | chrome & opera use RE blink, firefox use gecko | gets data from the network)
 RE reads HTML and constructs a dom content tree made up of dom nodes. Nodes can be images, text blocks, buttons, lists, etc
 With the styling components, a new rendered tree is formed and it goes through a layout process where 
 each node is positioned on the screen with coordinates. The rendered tree is then traversed
