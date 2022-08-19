@@ -23,7 +23,7 @@ server and you are communicating with that server and get data present on the in
     5. JS interpreter (chrome-V8, firefox-spidermonkey)
     6. Data storage (cookies and local storage)
 
-    [![Componentsbrowser-Components.png](https://i.postimg.cc/yxhG83P8/Componentsbrowser-Components.png)](https://postimg.cc/MfT5sTNC)
+[![Componentsbrowser-Components.png](https://i.postimg.cc/yxhG83P8/Componentsbrowser-Components.png)](https://postimg.cc/MfT5sTNC)
 
 </details>
 
