@@ -6,10 +6,18 @@
 
 ### Explanation
 
+Internet is Global system of interconnected computer networks that uses the 
+Internet Protocol suite(TCP/IP) to communicate between networks and devices.
+
+With web we dont just mean websites but any interaction with a computer called
+server and you are communicating with that server and get data present on the internet 
+
+
 <details>
-    <summary>High Level Components of a browser</summary>
+    <summary>High level components of a browser</summary>
 
     1. User Interface
+    hii
     2. Rendering engine (HTML CSS -> Webpage | renders img, video, html, css, svg, etc | chrome & opera use RE blink, firefox use gecko | gets data from the network)
     3. Browser engine (Server <-> Rendering engine)
     4. Network
@@ -17,32 +25,6 @@
     6. Data storage (cookies and local storage)
 
 </details>
-
-<details>
-    <summary>High Level Components of a browser</summary>
-    ~~~
-        - User Interface
-        - Rendering engine (HTML CSS -> Webpage | renders img, video, html, css, svg, etc | chrome & opera use RE blink, firefox use gecko | gets data from the network)
-        - Browser engine (Server <-> Rendering engine)
-        - Network
-        - JS interpreter (chrome-V8, firefox-spidermonkey)
-        - Data storage (cookies and local storage)
-    ~~~
-</details>
-
-Internet is Global system of interconnected computer networks that uses the 
-Internet Protocol suite(TCP/IP) to communicate between networks and devices.
-
-With web we dont just mean websites but any interaction with a computer called
-server and you are communicating with that server and get data present on the internet 
-
-Components:
-1. User Interface
-2. Rendering engine (HTML CSS -> Webpage | renders img, video, html, css, svg, etc | chrome & opera use RE blink, firefox use gecko | gets data from the network)
-3. Browser engine (Server <-> Rendering engine)
-4. Network
-5. JS interpreter (chrome-V8, firefox-spidermonkey)
-6. Data storage (cookies and local storage)
 
 Rendering:
 RE reads HTML and constructs a dom content tree made up of dom nodes. Nodes can be images, text blocks, buttons, lists, etc
