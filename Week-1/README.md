@@ -6,11 +6,15 @@
 
 ### Explanation
 
-Internet is Global system of interconnected computer networks that uses the 
-Internet Protocol suite(TCP/IP) to communicate between networks and devices.
+<p> Internet is Global system of interconnected computer networks that uses the 
+Internet Protocol suite(TCP/IP) to communicate between networks and devices. </p>
 
-With web we dont just mean websites but any interaction with a computer called
-server and we are communicating with that server and get data present on the internet 
+<p> With web we dont just mean websites but any interaction with a computer called
+server and we are communicating with that server and get data present on the internet. To get access to this networks, we use an interface called browser.</p>
+
+<p>
+Lets see how a browser works.
+</p>
 
 <details>
     <summary>Main functionality of the browser</summary>
