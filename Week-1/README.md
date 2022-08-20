@@ -35,7 +35,7 @@ Browsing Process:
 4. Server returns browser with the HTML, CSS and JS files
 5. Rendering engine and JS interpreter displays webpage on the display area of browser
 
-[![Componentsbrowser-func.png](https://i.postimg.cc/9FnQcFcy/Componentsbrowser-func.png)](https://postimg.cc/hfVBrnzG)
+[![functionbrowser-func.png](https://i.postimg.cc/ydt5Fg6B/functionbrowser-func.png)](https://postimg.cc/34jnhwDb)
 
 <p>
     Lets take a deeper look into involved techs and what source code does a broswer gets from a server. Browser gets a combination of HTML CSS and JS. These are the three technologies involved into getting the screen what we see. HTML (Hypertext Markup Language) and it gives a web page a skeleton and is written in a standardized tags representing different components of a website. Like header, footer, images, sections, etc. Css (Cascading Style Sheet) gives the styles/looks to a webpage like colors, animations, margin, padding, etc. And then comes JS (JavaScript) which brings in all the logic to the UI and all the dynamic mobility of code. For eg. events like onclick drop-downs, generating product cards on e-commerce webpages, etc. Now if the page is generated dynamically on the server side, then there need to be some code that runs on the server side. This is done by the techs like NodeJs, PHP, etc. There are some frameworks like ReactJs, VueJs, AngularJs, which makes parsing incoming requests easier and we get a finished parsed data. There are also some new techs for real time communication where we dont have request-response but server actively push a new message to the client so client never sent a request but gets new data anyways through a tech named WebSockets.
@@ -55,7 +55,7 @@ Browsing Process:
     5. Network (Server -> Browser engine)
     6. Data storage (cookies and local storage)
 
-[![Componentsbrowser-comp-1.png](https://i.postimg.cc/rmqLT7bB/Componentsbrowser-comp-1.png)](https://postimg.cc/TyNsqNT0)
+[![Componentsbrowser-comp-2.png](https://i.postimg.cc/mZcWtRZB/Componentsbrowser-comp-2.png)](https://postimg.cc/mhG55vF5)
 
 </details>
 
