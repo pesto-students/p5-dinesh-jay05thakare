@@ -112,7 +112,7 @@ Painting: </br>
 
 <p>
 Compositing:  </br>
-    Compositing is about only opacity and transform. These are two kind of special CSS properties. For eg when we want to to make a button bigger when hovered over it, it will typically mean we would have to layout and paint display again if we chose traditional way. But doing that every time will degrade the performance of our site. To over come this, compositing is used by the browser. Compositing creates a texture of coordinates to where with the hovered button grow and just changes the colour of texture to button color to bring in the desired transformations. While layout and painting is handled by CPU, compositing is handled by GPU, which makes it even more faster without actually changing the layout of other elements.
+    Compositing is about only opacity and transform. These are two kind of special CSS properties. For eg when we want to to make a button bigger when hovered over it, it will typically mean we would have to layout and paint display again if we chose traditional way. But doing that every time will degrade the performance of our site. To over come this, compositing is used by the browser. Compositing creates a blank texture using coordinates to where will the hovered button grow and just changes the colour of texture to button color to bring in the desired transformations. While layout and painting is handled by CPU, compositing is handled by GPU, which makes it even more faster without actually changing the layout of other elements.
 </p>
 
 <p>
