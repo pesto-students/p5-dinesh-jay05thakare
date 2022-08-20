@@ -99,27 +99,27 @@ Rendering Process:
 </p>
 
 <p>
-Layout:
+Layout: </br>
     Layout will position element on the display with respect to coordinates of the display area. These displayed part will be just an empty boxes positioned as requested by the render tree.
 </p>
 
 <p>
-Painting:
+Painting: </br>
     Before we had theoritical objects, and after we assign coordinates to elements, its now time to provide them with colors. All types of CSS properties assigned to HTML elements, gets respective styles. Painting colourizes all the pixels of the display area.
 </p>
 
 [![Screenshot-2022-08-21-003953.png](https://i.postimg.cc/ht3dfNDX/Screenshot-2022-08-21-003953.png)](https://postimg.cc/bZkJ5C2P)
 
 <p>
-Compositing:
+Compositing:  </br>
     Compositing is about only opacity and transform. These are two kind of special CSS properties. For eg when we want to to make a button bigger when hovered over it, it will typically mean we would have to layout and paint display again. But doing that every time will degrade the performance of our site. To ovevr come this, compositing is used by the browser. While layout and painting is handled by CPU, compositing is handled by GPU, which makes it even more faster without actually changing the layout of other elements.
 </p>
 
-[![download.png](https://i.postimg.cc/VkT8SW3f/download.png)](https://postimg.cc/RWc8yKSy)
-
 <p>
-Performance optimization:
+Performance optimization: </br>
     Layout is quite long process, painting is even longer, reason why pages sometime are frozen for loading. Compositing also takes a bit of time, as it create textures and then send it to GPU. Changing element without compositing techniques will keep changing entire layout and paint again and again, so its better to use compositing techniques (transform and opacity) for better performances.
 </p>
+
+[![download.png](https://i.postimg.cc/VkT8SW3f/download.png)](https://postimg.cc/RWc8yKSy)
 </details>
 
