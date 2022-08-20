@@ -39,6 +39,8 @@ server and you are communicating with that server and get data present on the in
     Different browsers use different render engines. Like Chrome and Opera uses Blink and Firefox uses Gecko.
 </p>
 
+Rendering Process:
+
 1. Process HTML markup and build a DOM tree
 2. Process CSS markup and build the CSSOM tree
 3. Combine DOM and CSSOM into a render tree
