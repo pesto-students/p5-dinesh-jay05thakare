@@ -12,6 +12,38 @@ Internet Protocol suite(TCP/IP) to communicate between networks and devices.
 With web we dont just mean websites but any interaction with a computer called
 server and we are communicating with that server and get data present on the internet 
 
+<details>
+    <summary>Main functionality of the browser</summary>
+
+<p>
+    Let's take the most common scenario that we are visiting a web page like youtube.com. So we open up our browser and enter https://www.youtube.com. Now on the backend side, any website needs to be stored somewhere from where anyone could access them with some URL links. So the data center servers works as a storage centers. Now when ever we request youtube.com, server returns some UI files (HTML, CSS, JS) and some client side processing files (JS) to your browser(client). Because browser in the end is just an interpreter which gets some source code and it can display it on the screen.
+</p>
+
+<p>
+    But now the question is how does the servers know what data or web page are we requesting. So here is where DNS and IP addresses plays a role. Every webpage has its address, more commonly known as IP address. This IP address points to a location in the network at a server. So to get this address, our browser contacts a DNS (Domain Name System) server. DNS is like a huge dictionary and has key-value pairs. Key as the domain name or URL and value as an IP address. On request from the browser, this IP address is returned to the browser.
+</p>
+
+<p>
+    Now the browser goes to server with this IP address via our router and TCP/IP (Trasmission Control Protocol/Internet Protocol). And how so ever the website is developed, processes takes place in server side and the resultant files are returned to the browser. If the website has dynamic approaches, then an end-to-end encrypted connection is formed between client side and server side with https(Hypertext Transfer Protocol Secure).
+</p>
+
+Browsing Process:
+
+1. Browser reuest DNS server for URLs' IP address
+2. DNS returns browser an IP address
+3. Browser requests network/server for files present on IP address
+4. Server returns browser with the HTML, CSS and JS files
+5. Rendering engine and JS interpreter displays webpage on the display area of browser
+
+[![Componentsbrowser-func.png](https://i.postimg.cc/9FnQcFcy/Componentsbrowser-func.png)](https://postimg.cc/hfVBrnzG)
+
+<p>
+    Lets take a deeper look into involved techs and what source code does a broswer gets from a server. Browser gets a combination of HTML CSS and JS. These are the three technologies involved into getting the screen what we see. HTML (Hypertext Markup Language) and it gives a web page a skeleton and is written in a standardized tags representing different components of a website. Like header, footer, images, sections, etc. Css (Cascading Style Sheet) gives the styles/looks to a webpage like colors, animations, margin, padding, etc. And then comes JS (JavaScript) which brings in all the logic to the UI and all the dynamic mobility of code. For eg. events like onclick drop-downs, generating product cards on e-commerce webpages, etc. Now if the page is generated dynamically on the server side, then there need to be some code that runs on the server side. This is done by the techs like NodeJs, PHP, etc. There are some frameworks like ReactJs, VueJs, AngularJs, which makes parsing incoming requests easier and we get a finished parsed data. There are also some new techs for real time communication where we dont have request-response but server actively push a new message to the client so client never sent a request but gets new data anyways through a tech named WebSockets.
+</p>
+
+
+</details>
+
 
 <details>
     <summary>High level components of a browser</summary>
@@ -50,39 +82,6 @@ Rendering Process:
 3. Combine DOM and CSSOM into a render tree
 4. Run layout on display of the render tree to compute the geometry of each node
 5. Paint the individual nodes on the screen.
-
-
-</details>
-
-
-<details>
-    <summary>Main functionality of the browser</summary>
-
-<p>
-    Let's take the most common scenario that we are visiting a web page like youtube.com. So we open up our browser and enter https://www.youtube.com. Now on the backend side, any website needs to be stored somewhere from where anyone could access them with some URL links. So the data center servers works as a storage centers. Now when ever we request youtube.com, server returns some UI files (HTML, CSS, JS) and some client side processing files (JS) to your browser(client). Because browser in the end is just an interpreter which gets some source code and it can display it on the screen.
-</p>
-
-<p>
-    But now the question is how does the servers know what data or web page are we requesting. So here is where DNS and IP addresses plays a role. Every webpage has its address, more commonly known as IP address. This IP address points to a location in the network at a server. So to get this address, our browser contacts a DNS (Domain Name System) server. DNS is like a huge dictionary and has key-value pairs. Key as the domain name or URL and value as an IP address. On request from the browser, this IP address is returned to the browser.
-</p>
-
-<p>
-    Now the browser goes to server with this IP address via our router and TCP/IP (Trasmission Control Protocol/Internet Protocol). And how so ever the website is developed, processes takes place in server side and the resultant files are returned to the browser. If the website has dynamic approaches, then an end-to-end encrypted connection is formed between client side and server side with https(Hypertext Transfer Protocol Secure).
-</p>
-
-Browsing Process:
-
-1. Browser reuest DNS server for URLs' IP address
-2. DNS returns browser an IP address
-3. Browser requests network/server for files present on IP address
-4. Server returns browser with the HTML, CSS and JS files
-5. Rendering engine and JS interpreter displays webpage on the display area of browser
-
-[![Componentsbrowser-func.png](https://i.postimg.cc/9FnQcFcy/Componentsbrowser-func.png)](https://postimg.cc/hfVBrnzG)
-
-<p>
-    Lets take a deeper look into involved techs and what source code does a broswer gets from a server. Browser gets a combination of HTML CSS and JS. These are the three technologies involved into getting the screen what we see. HTML (Hypertext Markup Language) and it gives a web page a skeleton and is written in a standardized tags representing different components of a website. Like header, footer, images, sections, etc. Css (Cascading Style Sheet) gives the styles/looks to a webpage like colors, animations, margin, padding, etc. And then comes JS (JavaScript) which brings in all the logic to the UI and all the dynamic mobility of code. For eg. events like onclick drop-downs, generating product cards on e-commerce webpages, etc. Now if the page is generated dynamically on the server side, then there need to be some code that runs on the server side. This is done by the techs like NodeJs, PHP, etc. There are some frameworks like ReactJs, VueJs, AngularJs, which makes parsing incoming requests easier and we get a finished parsed data. There are also some new techs for real time communication where we dont have request-response but server actively push a new message to the client so client never sent a request but gets new data anyways through a tech named WebSockets.
-</p>
 
 
 </details>
