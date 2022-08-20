@@ -31,14 +31,18 @@ server and you are communicating with that server and get data present on the in
 <details>
     <summary>Rendering Engine</summary>
 
-    RE reads HTML and constructs a dom content tree made up of dom nodes. Nodes can be images, text blocks, buttons, lists, etc. With the styling components, a new rendered tree is formed and it goes through a layout process where each node is positioned on the screen with coordinates. The rendered tree is then traversed with each node painted using the UI backend layer. When the parsing process is finished the browser will mark the document as interactive and allow us(the user) to interact with the nodes on the page
+<p>
+    RE reads HTML and constructs a dom content tree made up of dom nodes. Nodes can be images, text blocks, buttons, lists, etc. With the styling components, a new rendered tree is formed and it goes through a layout process where each node is positioned on the screen with coordinates. The rendered tree is then traversed with each node painted using the UI backend layer. When the parsing process is finished the browser will mark the document as interactive and allow us(the user) to interact with the nodes on the page.
+</p>
+
+    
 1. Process HTML markup and build a DOM tree
 2. Process CSS markup and build the CSSOM tree
 3. Combine DOM and CSSOM into a render tree
 4. Run layout on the render tree to compute the geometry of each node
 5. Paint the individual nodes on the screen.
 
-[![Group-3render-engine.png](https://i.postimg.cc/B6WQWhcD/Group-3render-engine.png)](https://postimg.cc/LqTML3W6)
+[![Funnelrender-engine.png](https://i.postimg.cc/QMh06DvW/Funnelrender-engine.png)](https://postimg.cc/nXS4zyFH)
 
 </details>
 
