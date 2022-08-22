@@ -38,3 +38,61 @@ button{
   transition: all 0.3s ease;
 }
 /* sidebar ends */
+
+
+/* bottom bar starts */
+.bottom-bar{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  color: #ffffff;
+  background-color: #486c9c;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.bottom-bar-left{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-poster{
+  width: 80px;
+  margin-right: 10px;
+}
+
+.bottom-song{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+div.bottom-song > *{
+  padding-top: 10px;
+}
+
+.bottom-poster img{
+  width: 100%;
+}
+
+.bottom-bar-right{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-bar-right button{
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* bottom bar ends */
