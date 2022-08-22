@@ -101,6 +101,13 @@ div.playlist-func > *{
   font-weight: 600;
 }
 
+.playlist-table .sync span{
+  color: #0027d4;
+  font-weight: 400;
+  border: 1px solid #000;
+  text-transform: uppercase;
+}
+
 .playlist-table tr:nth-child(even){
   background-color: #f8f4f4;
 }
