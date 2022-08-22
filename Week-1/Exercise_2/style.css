@@ -1,0 +1,40 @@
+/* common styles starts */
+*{
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.container{
+  width: 100vw;
+  position: relative;
+}
+/* common styles ends */
+
+/* sidebar starts */
+.side-bar{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  justify-content: space-around;
+  padding:0 10px;
+  background-color: #f8f4f4;
+  z-index: 1;
+}
+
+.side-bar button{
+  color: #000000;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+/* sidebar ends */
