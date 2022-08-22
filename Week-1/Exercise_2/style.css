@@ -39,6 +39,82 @@ button{
 }
 /* sidebar ends */
 
+/* playlist section starts */
+.playlist-section{
+  position: relative;
+  padding-left: 35px;
+}
+
+.playlist-header{
+  display: flex;
+  padding: 35px;
+  background-color: #484444;
+  color: #ffffff;
+}
+
+.playlist-header .header-poster{
+  margin-right: 35px;
+}
+
+.playlist-header .header-poster img{
+  width: 98%;
+}
+
+.playlist-desc-func{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.playlist-desc h6{
+  padding-top: 10px;
+}
+
+.playlist-desc span, h6{
+  font-size: 12px;
+}
+
+.playlist-func button{
+  color: #ffffff;
+  font-size: 14px;
+}
+
+div.playlist-func > *{
+  margin-right: 12px;
+}
+
+.playlist{
+  padding: 10px;
+}
+
+.playlist-table{
+ width: 100%;
+ border-collapse: collapse;
+ counter-reset: rowNumber;
+}
+
+.playlist-table td{
+  padding: 12px;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.playlist-table tr:nth-child(even){
+  background-color: #f8f4f4;
+}
+
+.playlist-table tr::before{
+  display: table-cell;
+  counter-increment: rowNumber;
+  content: counter(rowNumber) ".";
+  text-align: right;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+/* playlist section ends */
 
 /* bottom bar starts */
 .bottom-bar{
@@ -48,6 +124,7 @@ button{
   z-index: 1;
   color: #ffffff;
   background-color: #486c9c;
+  text-transform: capitalize;
   padding: 10px;
   display: flex;
   flex-direction: row;
