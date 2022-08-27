@@ -1,0 +1,128 @@
+/* common styles starts */
+*{
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.section{
+  padding: 50px 30px;
+}
+
+.font-hand{
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* common styles ends */
+
+/* section 2 starts */
+.section-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-2 h2{
+  font-weight: 900;
+  font-size: 3.75rem;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.blog-cards{
+  display: flex;
+  margin-top: 4rem;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.card{
+  position: relative;
+  border-radius: 0.75rem;
+  border: 1.5px solid #000;
+  width: 500px;
+  max-width: 500px;
+  margin: 25px 20px;
+  /* overflow: hidden; */
+}
+
+.card::after{
+  content: "";
+  background-color:rgba(127, 255, 212, 0.49);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 0.75rem;
+  left: 10px;
+  top: 10px;
+  z-index: -1;
+}
+
+.card-img{
+  /* max-width: 92rem; */
+}
+
+.card-img img{
+  width: 100%;
+  object-fit: contain;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.card-desc{
+  position: relative;
+  padding: 0.7rem 1rem;
+}
+
+.card-desc h1{
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-desc p{
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  bottom: 0px;
+  font-size: 1rem;
+  background: #ffffff;
+  border-radius: 0 0 0.75rem 0.75rem;
+  padding: 10px;
+}
+
+.card-desc:hover p{
+  opacity: 1;
+}
+
+.svgs{
+  position: absolute;
+}
+
+.triangle-svg{
+  right: 7rem;
+  top: 12rem;
+}
+
+.disc1-svg{
+  top: 6rem;
+  right: 6rem;
+}
+
+.disc2-svg{
+  left: 9rem;
+}
+
+.square-svg{
+  left: 7rem;
+  top: 8rem;
+}
+
+.circle-svg{
+  height: 10rem;
+  left: -6rem;
+  margin-top: 25rem;
+}
+/* section 2 ends */
