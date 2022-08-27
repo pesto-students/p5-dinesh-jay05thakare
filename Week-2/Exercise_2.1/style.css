@@ -4,10 +4,12 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 .section{
-  padding: 50px 30px;
+  padding: 50px 0;
 }
 
 .font-hand{
@@ -15,7 +17,35 @@
   font-size: 1.5rem;
   text-align: center;
 }
+
+.container{
+  padding: 30px;
+}
 /* common styles ends */
+
+/* navigation bar starts */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav h1 a{
+  color: lightcoral;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul > li a{
+  margin-left: 20px;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* navigation bar ends */
 
 /* section 2 starts */
 .section-2{
