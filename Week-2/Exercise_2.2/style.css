@@ -1,0 +1,80 @@
+/* common styles starts */
+*{
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* common styles ends */
+
+/* boxes styling starts */
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+
+.boxes-container{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 200px;
+  margin: auto; 
+  display: flex;
+  background-color: #333;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  transition: transform 1s linear;
+}
+
+.box-1{
+  background-color: red;
+  left: 0;
+  top: 0;
+  transform-origin: top left;
+}
+
+.box-2{
+  background-color: yellow;
+  right: 0;
+  top: 0;
+  transform-origin: top right;
+}
+
+.box-3{
+  background-color: blue;
+  left: 0;
+  bottom: 0;
+  transform-origin: bottom left;
+}
+
+.box-4{
+  background-color: green;
+  right: 0;
+  bottom: 0;
+  transform-origin: bottom right;
+}
+
+.boxes-container:hover .box-1,.boxes-container:hover .box-4{
+  transform: rotate(90deg);
+}
+
+.boxes-container:hover .box-2, .boxes-container:hover .box-3{
+  transform: rotate(-90deg);
+}
+
+.inner-content{
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inner-content img{
+  max-width: 100%;
+  max-height: 100%;
+}
+/* boxes styling ends */
