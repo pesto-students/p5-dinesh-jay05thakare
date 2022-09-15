@@ -27,11 +27,11 @@ function time(fn){
   console.time();
   fn();
   console.timeEnd();
+  console.log();
 }
 
 const addM = memoize(add);
 
-time(() => addM(10, 10));
 time(() => addM(10, 10));
 time(() => addM(10, 10));
 time(() => addM(10, 10));
