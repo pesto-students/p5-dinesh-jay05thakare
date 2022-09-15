@@ -12,7 +12,6 @@ const Teacher = function() {
 
 // Object.setPrototypeOf(Teacher, Person);
 Teacher.prototype = new Person();
-// console.log(Object.getPrototypeOf(Teacher));
 
 Teacher.prototype.teach = function(subject){
   return console.log(this.name + ' is now teaching ' + subject);
