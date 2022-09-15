@@ -1,4 +1,4 @@
-var Person = function () {name: 'jay'};
+var Person = function () {};
 
 Person.prototype.initialize = function (name, age) {
   this.name = name;
@@ -6,14 +6,18 @@ Person.prototype.initialize = function (name, age) {
 };
 
 // TODO: create the class Teacher and a method teach
-function Teacher() {
-  teach = function(subject) {
-    return console.log(this.name + 'is now teaching' + subject);
-  }
+const Teacher = function() {
+
 };
 
-Object.setPrototypeOf(Teacher, Person);
-console.log(Object.getPrototypeOf(Teacher));
+// Object.setPrototypeOf(Teacher, Person);
+Teacher.prototype = new Person();
+// console.log(Object.getPrototypeOf(Teacher));
+
+Teacher.prototype.teach = function(subject){
+  return console.log(this.name + ' is now teaching ' + subject);
+}
+
 
 var him = new Teacher();
 
