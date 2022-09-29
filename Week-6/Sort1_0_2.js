@@ -31,3 +31,6 @@ for (let el in arr) {
 }
 
 console.log(arr);
+
+// TC = O(n)
+// SC = O(1)

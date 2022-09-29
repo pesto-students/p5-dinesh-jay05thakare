@@ -37,3 +37,6 @@ while (row_start <= row_end && col_start <= col_end) {
   }
   col_start++;
 }
+
+// TC = O(n^2)
+// SC = O(1)

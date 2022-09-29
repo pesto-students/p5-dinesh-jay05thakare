@@ -14,3 +14,6 @@ for (let i = 1; i < arr.length; i++) {
 }
 
 console.log(maxDiff);
+
+// TC = O(N)
+// SC = O(1)
