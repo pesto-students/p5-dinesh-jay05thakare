@@ -56,3 +56,7 @@ console.log(s1);
 queuePop();
 console.log(s1);
 
+// push TC = O(1)
+// pop TC = O(N)
+
+// SC = O(1)

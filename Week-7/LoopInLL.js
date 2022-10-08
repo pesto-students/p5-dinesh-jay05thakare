@@ -34,3 +34,6 @@ head.next.next.next.next.next.next = new Node(7);
 head.next.next.next.next.next.next.next = head.next.next;
 
 console.log(isLoop(head));
+
+// TC = O(N)
+// SC = O(1)

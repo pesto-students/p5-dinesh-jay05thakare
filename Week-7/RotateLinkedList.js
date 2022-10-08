@@ -61,3 +61,6 @@ head = rotateLL(head, 4);
 
 console.log("Rotated LL: ");
 printLL(head);
+
+// TC = O(n)
+// SC = O(1)

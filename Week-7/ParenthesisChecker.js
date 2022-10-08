@@ -39,7 +39,7 @@ function isMatch(open, close) {
 function ParenthesisCheck(exp) {
   let stack = new Stack();
   let open = new Set(["(", "{", "["]); //for has function
-  let i = 1;
+  let i = 1; //exp index
 
   stack.push(exp[0]);
 
@@ -65,3 +65,6 @@ function ParenthesisCheck(exp) {
 let exp = "[()]{}{()()}";
 
 console.log(ParenthesisCheck(exp));
+
+// TC = O(n)
+// SC = O(1)

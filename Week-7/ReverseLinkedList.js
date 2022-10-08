@@ -45,3 +45,6 @@ head = reverseLL(head);
 
 console.log("Reversed LL: ");
 printLL(head);
+
+// TC = O(n)
+// SC = O(1)
