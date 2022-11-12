@@ -3,26 +3,24 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 function TodoForm({ addTodo }) {
-  // const uuid = reqiure('uuid');
-
   const [todo, setTodo] = useState({
     id: "",
     task: "",
     completed: false,
   });
 
-  function handleTaskInputChange(e) {
-    // e.target.value contains new input from onChange
+  function handleTaskInputChange(event) {
+    // event.target.value contains new input from onChange
     // event for input elements
-    setTodo({ ...todo, task: e.target.value });
+    setTodo({ task: event.target.value });
   }
 
-  function handleSubmit(e) {
-    e.preventDefault(); // prevents browser refresh
+  function handleSubmit(event) {
+    event.preventDefault(); // prevents browser refresh
     // trim() gets rid of string whitespace
     if (todo.task.trim()) {
       addTodo({ ...todo, id: uuidv4() });
-      setTodo({ ...todo, task: "" });
+      setTodo({ task: "" });
     }
   }
 
