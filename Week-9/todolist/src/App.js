@@ -1,4 +1,4 @@
-// import Typography from "@material-ui/core/Typography";
+import Typography from "@material-ui/core/Typography";
 import React, { useEffect, useState } from "react";
 
 import "./App.css";
@@ -48,9 +48,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Typography style={{ padding: 16 }} variant="h1">
+      <Typography style={{ padding: 16 }} variant="h1">
         React Todo
-      </Typography> */}
+      </Typography>
       <TodoForm addTodo={addTodo} />
       <TodoList
         todos={todos}
