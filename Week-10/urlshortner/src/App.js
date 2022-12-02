@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Shortner from "./components/Shortner";
+import Result from "./components/Result";
+import Header from "./components/Header";
+
+import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [shortenedUrl, setShortenedUrl] = useState(
+    "You will find shortened link here"
+  );
+  const [loading, setLoading] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Shortner setShortenedUrl={setShortenedUrl} setLoading={setLoading} />
+      <Result result={shortenedUrl} loading={loading}/>
     </div>
   );
 }
