@@ -1,0 +1,91 @@
+*{
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+}
+
+.header{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.header-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.header-text h1{
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.illus{
+  width: 30%;
+  margin-right: 40px;
+}
+
+.illus img{
+  width: 80%;
+}
+
+.shortner, .result {
+  max-width: 800px;
+  width: 80%;
+  display: flex;
+  margin: 5px;
+}
+
+.result{
+  margin-bottom: 40px;
+}
+
+
+.shortner input, .result p {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 10);
+  padding: 10px;
+  flex-grow: 100;
+  margin-right: 10px;
+  background-color: #fff;
+  color: rgb(100, 100, 100);
+}
+
+.shortner button, .result button{
+  border-radius: 5px;
+  background-color: crimson;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loading{
+  cursor: progress;
+  padding: 44px;
+}
+
+.copied{
+  transform: scale(1.1);
+}
+
+.result p{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0;
+}
