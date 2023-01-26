@@ -20,7 +20,10 @@ function App() {
 
   useEffect(() => {
     // fires when todos array gets updated
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos));
+    const storageTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+    if(todos.length > 0){
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos));
+    }
   }, [todos]);
 
   function addTodo(todo) {
@@ -30,11 +33,11 @@ function App() {
 
   function toggleComplete(id) {
     setTodos(
-      todos.map(todo => {
+      todos.map((todo) => {
         if (todo.id === id) {
           return {
             ...todo,
-            completed: !todo.completed
+            completed: !todo.completed,
           };
         }
         return todo;
@@ -43,7 +46,7 @@ function App() {
   }
 
   function removeTodo(id) {
-    setTodos(todos.filter(todo => todo.id !== id));
+    setTodos(todos.filter((todo) => todo.id !== id));
   }
 
   return (
